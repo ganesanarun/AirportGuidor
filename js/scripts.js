@@ -273,7 +273,7 @@ function updateUrlLocation(center, zoom) {
 
 	var url = '?lat=' + center.lat() + '&lon=' + center.lng() + '&zoom=' + zoom;
 	// Set the url
-	// window.history.pushState({center: center, zoom: zoom}, 'map center', url);
+	window.history.pushState({center: center, zoom: zoom}, 'map center', url);
 
 }
 
